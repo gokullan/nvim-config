@@ -22,6 +22,8 @@ Plug(
 Plug 'nvim-tree/nvim-tree.lua'
 -- git lens
 Plug 'APZelos/blamer.nvim'
+-- themes
+Plug 'EdenEast/nightfox.nvim'
 
 vim.call('plug#end')
 
