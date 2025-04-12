@@ -2,5 +2,5 @@
 require('settings');
 -- plugin settings
 require('vimplug');
--- key mappings
+-- keymap settings
 require('keymaps');
