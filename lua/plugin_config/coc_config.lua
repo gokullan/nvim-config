@@ -4,6 +4,7 @@ local function check_back_space()
 end
 
 local opts = { silent = true, noremap = true, expr = true, replace_keycodes = false }
+local keyset = vim.keymap.set
 
 vim.keymap.set("i", "<Tab>",
     function()
@@ -28,5 +29,8 @@ vim.keymap.set("i", "<CR>", function()
         end
        return "\r"
 end, opts)
+
+-- Code navigation
+keyset("n", "gd", "<Plug>(coc-definition)", {silent = true})
 
 -- Reference: https://github.com/neoclide/coc.nvim/discussions/3776#discussioncomment-5463741

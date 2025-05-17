@@ -18,11 +18,11 @@ dap.configurations.go = {
     name = 'DPS Debug';
     request = 'launch';
     showLog = false;
-    program = "${workspaceFolder}/data-pipeline-service/data_pipeline_service.go";
+    program = "./data-pipeline-service/data_pipeline_service.go";
     asRoot = true;
     args = {
         "-config",
-        "/home/d2c-gokulas/seacom/dps/data-pipeline-service/configs/ind/development.json",
+        "/home/d2c-gokulas/seaecom/dps/data-pipeline-service/configs/ind/development.json",
         "-ip",
         "127.0.0.1",
         "-port",

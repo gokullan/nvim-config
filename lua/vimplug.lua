@@ -8,22 +8,38 @@ Plug(
     'iamcco/markdown-preview.nvim',
     {['do'] = function() vim.fn['mkdp#util#install']() end,}
 )
+vim.g.mkdp_markdown_css = ''
+-- vim.g.mkdp_markdown_css = '/home/d2c-gokulas/playground/go-packages/slides/markdown1.css'
+
 -- debugging
 Plug 'mfussenegger/nvim-dap'
 Plug 'rcarriga/nvim-dap-ui'
 Plug 'folke/neodev.nvim'  -- recommended by nvim-dap-ui
+Plug 'nvim-neotest/nvim-nio'
 Plug 'Weissle/persistent-breakpoints.nvim'
+Plug 'mfussenegger/nvim-dap-python'
+
 -- autocomplete
 Plug(
     'neoclide/coc.nvim',
     {branch = 'release'}
 ) 
+
 -- file explorer
 Plug 'nvim-tree/nvim-tree.lua'
+
 -- git lens
 Plug 'APZelos/blamer.nvim'
+
 -- themes
-Plug 'EdenEast/nightfox.nvim'
+-- Plug 'EdenEast/nightfox.nvim'
+
+-- file searching
+Plug 'nvim-lua/plenary.nvim'
+Plug(
+    'nvim-telescope/telescope.nvim', 
+    {tag = '0.1.8' }
+)
 
 vim.call('plug#end')
 

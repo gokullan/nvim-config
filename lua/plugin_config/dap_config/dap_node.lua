@@ -44,4 +44,49 @@ require("dap").configurations.javascript = {
         NODE_TLS_REJECT_UNAUTHORIZED = 0
     }
   },
+  {
+    type = "pwa-node",
+    request = "launch",
+    name = "Re-queuing Service",
+    cwd = "${workspaceFolder}",
+    program = "${workspaceFolder}/lib/worker/init/init-requeue-worker.js",
+    args = {
+        "--unhandled-rejections",
+        "strict",
+        "--serviceConfig",
+        "./configs/_config_gen/ind-service-config-local.yml",
+        "--bootConfig",
+        "../boot-config-ind/config.json",
+        "--autonomous"
+    },
+    env = {
+        NODE_TLS_REJECT_UNAUTHORIZED = 0
+    }
+  },
+  {
+    type = "pwa-node",
+    request = "launch",
+    name = "OPS",
+    cwd = "${workspaceFolder}",
+    program = "${workspaceFolder}/server.js",
+    args = {
+        "--env",
+        "dev",
+        "--bootConfig",
+        "/boot-config/config.json"
+    },
+    env = {
+        NODE_TLS_REJECT_UNAUTHORIZED = 0
+    }
+  },
+  {
+    type = "pwa-node",
+    request = "launch",
+    cwd = "${workspaceFolder}",
+    name = "Current file",
+    program = "${file}",
+    env = {
+        NODE_TLS_REJECT_UNAUTHORIZED = 0
+    }
+  }
 }
