@@ -33,7 +33,7 @@ Plug 'nvim-tree/nvim-tree.lua'
 Plug 'APZelos/blamer.nvim'
 
 -- themes
--- Plug 'EdenEast/nightfox.nvim'
+Plug 'EdenEast/nightfox.nvim'
 
 -- file searching
 Plug 'nvim-lua/plenary.nvim'

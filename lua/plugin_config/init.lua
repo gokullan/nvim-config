@@ -6,3 +6,5 @@ require('plugin_config/dap_config')
 require('plugin_config/coc_config')
 -- telescope
 require('plugin_config/telescope_config')
+-- themes
+require('plugin_config/themes_config')
