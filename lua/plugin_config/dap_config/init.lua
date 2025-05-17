@@ -25,4 +25,4 @@ vim.keymap.set('n', 'ev', require 'dapui'.eval)
 -- require('dap').defaults.fallback.switchbuf = 'usetab'
 
 -- configure dap for each language
--- Eg: require('plugin_config/dap_config/dap_node')
+require('plugin_config/dap_config/dap_go')

@@ -14,6 +14,7 @@ vim.g.mkdp_markdown_css = ''
 -- debugging
 Plug 'mfussenegger/nvim-dap'
 Plug 'rcarriga/nvim-dap-ui'
+Plug 'nvim-neotest/nvim-nio'
 Plug 'folke/neodev.nvim'  -- recommended by nvim-dap-ui
 Plug 'nvim-neotest/nvim-nio'
 Plug 'Weissle/persistent-breakpoints.nvim'
@@ -40,6 +41,11 @@ Plug(
     'nvim-telescope/telescope.nvim', 
     {tag = '0.1.8' }
 )
+-- vim-latex-live-preview
+Plug(
+    'xuhdev/vim-latex-live-preview',
+    {['for'] = 'tex'}
+)
 
 vim.call('plug#end')
 
@@ -50,3 +56,4 @@ require('persistent-breakpoints').setup{
 	load_breakpoints_event = { "BufReadPost" }
 }
 vim.g.blamer_enabled = true -- for blamer
+vim.g.livepreview_previewer = 'okular' -- for vim-latex-live-preview

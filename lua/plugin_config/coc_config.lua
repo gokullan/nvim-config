@@ -32,5 +32,3 @@ end, opts)
 
 -- Code navigation
 keyset("n", "gd", "<Plug>(coc-definition)", {silent = true})
-
--- Reference: https://github.com/neoclide/coc.nvim/discussions/3776#discussioncomment-5463741
