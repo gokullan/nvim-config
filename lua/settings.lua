@@ -63,3 +63,12 @@ vim.api.nvim_create_user_command('JsonParser', jsonParser, {})
 
 -- enable copying to clipboard via "cc"
 vim.keymap.set('v', 'cc', '"+y')
+
+-- close all orphaned overlays created by rust-analyzer
+vim.keymap.set('n', '<leader>c', function()
+  for _, win in ipairs(vim.api.nvim_list_wins()) do
+    if vim.api.nvim_win_get_config(win).relative ~= "" then
+      vim.api.nvim_win_close(win, false)
+    end
+  end
+end, { silent = true, desc = "Force Close All Ghost Floating Windows" })

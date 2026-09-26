@@ -1,0 +1,13 @@
+{
+  "workspace.ignoredFolders": [
+    "$HOME",
+    "$HOME/.cargo/**",
+    "$HOME/.rustup/**"
+  ],
+  "suggest.floatConfig": {
+    "focusable": false,
+    "close": true
+  },
+  "suggest.detailField": "preview",
+  "suggest.timeout": 500
+}

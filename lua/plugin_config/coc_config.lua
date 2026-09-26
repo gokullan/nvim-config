@@ -46,4 +46,5 @@ function _G.show_docs()
 end
 keyset("n", "k", '<CMD>lua _G.show_docs()<CR>', {silent = true})
 
+
 -- Reference: https://github.com/neoclide/coc.nvim/discussions/3776#discussioncomment-5463741
